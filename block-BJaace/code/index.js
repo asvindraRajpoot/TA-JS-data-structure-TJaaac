@@ -40,9 +40,9 @@ for(let i=0;i<colors.length;i++)
    
 }
 // 18. Write a for..of loop to iterate through every element in the array and print each element to the console.
-for(let i=0;i<colors.length;i++)
+for(let color of colors)
 {
-    console.log(colors[i]);
+    console.log(color);
 }
 
 // 19. Create a variable named lastColor that will always point to the last element of the colors array, no matter how many colors are in the list. (Hint: make use of the array's length property for this!)
