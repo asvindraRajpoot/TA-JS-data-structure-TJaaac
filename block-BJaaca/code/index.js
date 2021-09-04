@@ -39,3 +39,56 @@ let keyName = 'playedBy';
 // - Add a new key named `totalSeasons` with the value of `1 + 2 + 3 + 2`. Use this expression
 
 // - Access the value of the key `totalSeason` (it should be 8)
+
+//
+let character ={};
+undefined
+character.characterName='Arya';
+'Arya'
+character
+{characterName: 'Arya'}
+let age=20;
+undefined
+character["character-age"]=age;
+20
+character["Sur name"]="Stark";
+'Stark'
+character.title="Lady of Winterfell"
+'Lady of Winterfell'
+character.greet=alert(`I am ${character.characterName} and my title is ${character.title}.`);
+
+character.greet=alert(`I am ${character.characterName} and my title is ${character.title}.`);
+undefined
+character.isFemale=`true`;
+'true'
+character.greet
+undefined
+character
+
+character["greet"];
+undefined
+character.greet=alert(`She is ${character.characterName} and her title is ${character.title}`);
+undefined
+character.greet
+undefined
+character.isAdult=age>18?true:false;
+true
+character.changeIsAdult=!character.isAdult?true:false;
+false
+character["keyName"]='playedby';
+'playedby'
+let keyName='playeby';
+undefined
+alert(character.keyName);
+undefined
+console.log('42');
+
+
+console.log(character["42"]);
+
+character.totalSeasons=`1+2+3+2`;
+'1+2+3+2'
+character.totalSeasons
+'1+2+3+2'
+Number(character.totalSeasons);
+NaN
