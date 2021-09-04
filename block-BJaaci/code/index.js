@@ -43,7 +43,7 @@ console.log(movies[0].actors);
 // 6. Log the name of the first actor of the first movie
 console.log(movies[0].actors[0]);
 // 7. Log the name of the last actor of the first movie
-console.log(movies[0].actors[actors.length-1]);
+console.log(movies[0].actors[movies[0].actors.length-1]);
 // 8. Log the name of the second actor (index 1) of the first movie
 console.log(movies[0].actors[1]);
 // 9. Log the name of the second actor (index 1) of the second movie
@@ -61,9 +61,9 @@ console.log(movies[0].genres[0]);
 // 15. Log the first genres of the second movie
 console.log(movies[1].genres[0]);
 // 16. Log the last genres of the first movie (using the length property of array)
-console.log(movies[1].genres[genres.length-1]);
+console.log(movies[0].genres[movies[0].genres.length-1]);
 // 17. Log the first genres of the second movie (using the length property of array)
-console.log(movies[1].genres[genres.length-3]);
+console.log(movies[1].genres[movies[0].genres.length-3]);
 // 18. Log all the genres of the first movie one by one
 console.log(movies[0].genres[0],movies[0].genres[1],movies[0].genres[2]);
 // 19. Log all the genres of the second movie one by one
@@ -113,31 +113,31 @@ for(let i=0;i<movies.length;i++){
 
 // 25. Log the number of actors in all three movies one by one
 for(let i=0;i<movies.length;i++){
-  console.log(movies[i].actors[actors.length]);
+  console.log(movies[i].actors[movies[i].actors.length]);
 }
 
 // 26. Log the number of genres in all three movies one by one
 for(let i=0;i<movies.length;i++){
-  console.log(movies[i].genres[actors.length]);
+  console.log(movies[i].genres[movies[i].actors.length]);
 }
 
 // 27. Log the name of all the movies with more than 1 genre
 for(let i=0;i<movies.length;i++){
-  if(movies[i].genres[genres.length]>1){
+  if(movies[i].genres[movies[i].genres.length]>1){
     console.log(movies[i].title);
   }
 }
 
 // 28. Log the name of all the movies with more than 1 actors
 for(let i=0;i<movies.length;i++){
-  if(movies[0].actors[actors.length]>1){
+  if(movies[0].actors[movies[i].actors.length]>1){
     console.log(movies[i].title);
   }
 }
 
 // 29. Log the name of all the movies with exactly 3 actors
 for(let i=0;i<movies.length;i++){
-  if(movies[0].actors[actors.length]===3){
+  if(movies[0].actors[movies[i].actors.length]===3){
     console.log(movies[i].title);
   }
 }
