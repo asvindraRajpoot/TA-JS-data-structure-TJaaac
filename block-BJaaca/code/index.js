@@ -55,9 +55,9 @@ character["Sur name"]="Stark";
 'Stark'
 character.title="Lady of Winterfell"
 'Lady of Winterfell'
-character.greet=alert(`I am ${character.characterName} and my title is ${character.title}.`);
+character.greet=function(){alert(`I am ${character.characterName} and my title is ${character.title}.`);}
 
-character.greet=alert(`I am ${character.characterName} and my title is ${character.title}.`);
+character.greet=function(){alert(`I am ${character.characterName} and my title is ${character.title}.`);}
 undefined
 character.isFemale=`true`;
 'true'
@@ -71,9 +71,9 @@ character.greet=alert(`She is ${character.characterName} and her title is ${char
 undefined
 character.greet
 undefined
-character.isAdult=age>18?true:false;
+character.isAdult=character["character-age"]>18?true:false;
 true
-character.changeIsAdult=!character.isAdult?true:false;
+character.changeIsAdult=function(){!character.isAdult?true:false;}
 false
 character["keyName"]='playedby';
 'playedby'
@@ -86,7 +86,7 @@ console.log('42');
 
 console.log(character["42"]);
 
-character.totalSeasons=`1+2+3+2`;
+character.totalSeasons=1+2+3+2;
 '1+2+3+2'
 character.totalSeasons
 '1+2+3+2'
