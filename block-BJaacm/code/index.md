@@ -25,12 +25,12 @@ let newUser = user;
 - `user.name == newUser.name;` // true both are holding same address
 - `user.sibling == newUser.sibling;` // true both are holding same address
 - `user.sibling === newUser.sibling;`// true both are holding same address
-- `user.sibling == allBrothers;`// true both are having same array
-- `user.sibling === allBrothers;`// true both are having same array
-- `brothersCopy === allBrothers;`// true both are having same array
-- `brothersCopy == allBrothers;` // true both are having same array
-- `brothersCopy == user.sibling;` // true both are having same array
-- `brothersCopy === user.sibling;`// true both are having same array
+- `user.sibling == allBrothers;`// false both are having different address
+- `user.sibling === allBrothers;`// false both are having different address
+- `brothersCopy === allBrothers;`// false both are having different address
+- `brothersCopy == allBrothers;` // false both are having different address
+- `brothersCopy == user.sibling;` // true both are having same address
+- `brothersCopy === user.sibling;`// true both are having same address
 - `brothersCopy[0] === user.sibling[0];`// true both are having same array
 - `brothersCopy[1] === user.sibling[1];` // true both are having same array
 - `user.sibling[1] === newUser.sibling[1];`// true both are having same address
