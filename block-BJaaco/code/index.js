@@ -99,8 +99,11 @@ console.log(times(5)); // ['test', 'test', 'test', 'test', 'test']
 
 function revert(array) {
   // your code
-   array.reverse();
-  return array;
+   let final=[];
+   for(let i=array.length-1;i>=0;i--){
+     final.push(array[i]);
+   }
+  return final;
 
 }
 
